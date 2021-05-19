@@ -1,0 +1,19 @@
+What is Athena 
+
+serverless, Uses S3, No ETL 
+Pay for query run 
+Has compression 
+
+Used for quick analysis and complex joins
+Runs in parallel
+
+Steps to use 
+
+* Create/use existing s3 bucket 
+* Create a metadata database (has a sample db)
+* create a schema (Its External)
+* Fine-tune serde 
+* Run query 
+* Access history 
+
+

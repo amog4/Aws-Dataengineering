@@ -1,0 +1,6 @@
+Install Aws cli 
+
+Create a profile
+
+aws --version
+aws configure --profile 'name' (useful instead of using credentials)
