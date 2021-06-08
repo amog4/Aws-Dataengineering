@@ -1,0 +1,11 @@
+# EMR Easy to use - No need to configure hadoop cluster
+
+Low Cost
+
+* Avoid paying for EC2 Instances
+* Take Advantage of EC2 spot and reserve prices
+
+# secure
+VPC - virtual private cloud
+Subnets
+
