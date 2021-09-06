@@ -1,0 +1,13 @@
+# Kinesis (similar to kafka) using cli 
+
+# help 
+aws Kinesis help
+
+# start the stream
+aws kinesis create-stream --stream-name ########### --shard-count 2  --profile ###
+
+# describe the stream
+aws kinesis describe-stream --stream-name ########### --profile ###
+
+# delete the stream
+aws kinesis delete-stream --stream-name ########### --profile ###
