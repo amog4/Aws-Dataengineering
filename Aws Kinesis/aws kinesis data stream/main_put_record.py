@@ -35,7 +35,7 @@ def main(args):
                     
         try:
             
-            put_records = Kinesis.put_record(kwargs)
+            put_records = Kinesis.put_record(**kwargs)
             partition_sequency[partition_key] = put_records['SequenceNumber']
 
             logging.info('Push Record {orders}')

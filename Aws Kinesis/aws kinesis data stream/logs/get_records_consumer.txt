@@ -1,0 +1,3 @@
+INFO 2021-09-09 16:45:40,375 :: Start program
+INFO 2021-09-09 16:45:40,376 :: Starting consumer
+INFO 2021-09-09 16:45:40,407 :: Found credentials in shared credentials file: ~/.aws/credentials
