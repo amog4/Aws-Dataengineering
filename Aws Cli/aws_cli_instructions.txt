@@ -4,3 +4,23 @@ Create a profile
 
 aws --version
 aws configure --profile 'name' (useful instead of using credentials)
+
+# list buckets
+
+aws s3 ls --profile "profile name"
+
+# help for ls
+
+aws s3 ls help
+
+# move the files to s3
+
+aws s3 mv help
+
+# cp
+
+aws s3 cp local-dir s3:// --recursive
+
+# exclude files
+
+aws s3 cp local-dir s3:// --recursive --exclude '*.csv'
