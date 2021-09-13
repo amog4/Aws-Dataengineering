@@ -1,9 +1,13 @@
 Install Aws cli 
 
+
+Check profiles linux
+~/.aws/credentials
+
 Create a profile
 
 aws --version
-aws configure --profile 'name' (useful instead of using credentials)
+aws configure --profile "profile name" (useful instead of using credentials)
 
 # list buckets
 
@@ -24,3 +28,5 @@ aws s3 cp local-dir s3:// --recursive
 # exclude files
 
 aws s3 cp local-dir s3:// --recursive --exclude '*.csv'
+
+# add policies to group or role
