@@ -6,4 +6,6 @@
 
 * Create a layer and push the zip by CLI
 
+* Lambda should be in same VPC
+
 
