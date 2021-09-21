@@ -1,5 +1,5 @@
 import pyodbc
-import os
+import os,json
 
 
 
@@ -11,18 +11,19 @@ def sql_server_connect(server ,database,username ,password):
     conn = pyodbc.connect(r"DRIVER={ODBC Driver 17 for SQL Server};SERVER="+server+';PORT=1433'+';DATABASE='+database+';UID='+username+';PWD='+password)
     return conn
 
-conn = sql_server_connect(server = server,
-                    database = 'master',
-                    username =username ,
-                    password =password)
+def lambda_handler(event, context):
+    conn = sql_server_connect(server = server,
+                        database = 'master',
+                        username =username ,
+                        password =password)
 
 
-cur =  conn.cursor()
+    cur =  conn.cursor()
 
-sql_01 = """
-            SELECT * FROM INFORMATION_SCHEMA.TABLES
+    sql_01 = """
+                SELECT * FROM INFORMATION_SCHEMA.TABLES
 
-           """
-x = cur.execute(sql_01) 
+            """
+    x = cur.execute(sql_01) 
 
-print(x.fetchall())
+    print(x.fetchall())
